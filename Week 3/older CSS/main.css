@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+/* Reset CSS */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+/* Week 1 assignment starts here */
+:root {
+    --blue: #6495ED;
+    --creme: #FAEBD7;
+    --darkcreme: #DEB887;
+    --grey: #E0E0E0;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Lora', serif;
+}
+
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    height: 100%;
+}
+
+header{
+    background-color: var(--blue);
+    color: var(--creme);
+}
+
+main{
+    background-color: var(--creme);
+}
+
+/* Navigation links */
+header ul{
+    list-style-type: none;
+}
+
+header a:link, header a:visited {
+    color: var(--creme);
+    text-decoration: none;
+}
+
+header a:active {
+    color: var(--darkcreme);
+}
+
+header a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Article title links */
+article ul{
+    list-style-type: none;
+}
+
+article a:link, article a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+article a:active {
+    color: var(--darkcreme);
+}
+
+article a:hover {
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+/* Other page links */
+ul{
+    list-style-type: none;
+}
+
+a:link, a:visited {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--darkcreme);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Flex Container */
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    padding: 5% 5%;
+    justify-content: space-evenly;
+}
+
+header hr{
+    width: 100%;
+}
+
+/* Nav Padding for list */
+nav li{
+    padding: 2%;
+    font-weight: bold;
+}
+
+/* Article boxes */
+article{
+    background-color: white;
+    width: 92%;
+    margin: auto;
+    border: 1px transparent;
+    padding: 8%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px var(--grey);
+    margin-bottom: 5%;
+    align-content: space-around;
+}
+
+article img{
+    display: block;
+    width: 200px;
+    margin: 8% 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main{
+    padding:5% 0 ;
+}
+
+article section p a{
+    color: var(--blue) !important;
+}
+.post-date{
+    color: grey;
+}
+/* This is media query for larger screen */
+@media screen and (min-width: 980px){
+    body > div{
+        display: flex;
+        flex-direction: row;   
+    }
+
+    article{
+        width: 80%;
+    }
+
+    header{
+        justify-content: flex-start;
+        width: 50vw;
+    }
+}

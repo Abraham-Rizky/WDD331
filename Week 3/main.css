@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+/* Reset CSS */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* ---------------------------------------------------------------------------------- */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Week 3 assignment starts here */
+h1, h2, h3, h4 {
+  font-family: "Lora", serif;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  height: 100%;
+}
+@media (min-width: 60em) {
+  body > div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+  }
+}
+
+header {
+  background-color: #6495ED;
+  color: #FAEBD7;
+}
+
+main {
+  background-color: #FAEBD7;
+}
+
+/* Navigation links */
+header ul {
+  list-style-type: none;
+}
+
+header a:link, header a:visited {
+  color: #FAEBD7;
+  text-decoration: none;
+}
+header a:active {
+  color: #DEB887;
+}
+header a:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+/* Article title links */
+article ul {
+  list-style-type: none;
+}
+
+article a:link, article a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+article a:active {
+  color: #DEB887;
+}
+article a:hover {
+  color: #6495ED;
+  text-decoration: underline;
+}
+
+/* Other page links */
+ul {
+  list-style-type: none;
+}
+
+a:link, a:visited {
+  color: #6495ED;
+  text-decoration: none;
+}
+a:active {
+  color: #DEB887;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Flex Container */
+header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  text-align: end;
+  padding: 5% 5%;
+  justify-content: space-evenly;
+}
+@media (min-width: 60em) {
+  header {
+    justify-content: flex-start;
+    width: 50vw;
+  }
+}
+
+header hr {
+  width: 100%;
+}
+
+/* Nav Padding for list */
+nav li {
+  padding: 2%;
+  font-weight: bold;
+}
+
+/* Article boxes */
+article {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  background-color: #FFFFFF;
+  width: 92%;
+  margin: auto;
+  border: 1px transparent;
+  padding: 8%;
+  box-shadow: 4px 4px #E0E0E0;
+  margin-bottom: 5%;
+  align-content: space-around;
+}
+@media (min-width: 60em) {
+  article {
+    width: 80%;
+  }
+}
+
+article img {
+  display: block;
+  margin: 8% 0;
+  width: 200px;
+  max-width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  padding: 5% 0;
+}
+
+article section p a {
+  color: #6495ED !important;
+}
+
+.post-date {
+  color: #808080;
+}
+
+/*# sourceMappingURL=main.css.map */
